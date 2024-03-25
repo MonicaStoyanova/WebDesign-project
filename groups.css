@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Sans";
+  overflow-x: hidden;
+}
+
+header {
+  background-image: url(./images/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+}
+
+.social {
+  background-color: #debb9c;
+  color: white;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.social i {
+  padding: 1em 0.5em;
+}
+
+.social li {
+  margin: 0 3em;
+}
+
+nav ul {
+  color: white;
+  display: flex;
+  list-style: none;
+  justify-content: end;
+  text-align: end;
+}
+
+nav ul li {
+  padding: 1em 2.5em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 5em 0em;
+}
+
+.title {
+  font-size: 3em;
+  letter-spacing: 0.1em;
+  font-weight: bolder;
+}
+
+.motivational-words {
+  text-align: center;
+  width: 28em;
+  padding: 1.5em 0em;
+}
+
+/*Cards about classes styling*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+.about-groups {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 1em 0;
+  margin: 2em 0 4em 0;
+}
+
+.class-card {
+  flex-basis: calc(33.33% - 20px);
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.class-card h2 {
+  text-align: center;
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.class-card p {
+  color: #666;
+  font-size: 1.2em;
+}
+
+.class-card img {
+  display: block;
+  width: 25em;
+  margin: 0 auto 10px;
+}
+
+/*footer*/
+footer {
+  background-color: #debb9c;
+  bottom: 0;
+  text-align: center;
+  padding: 0.5em 0;
+}
