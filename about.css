@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("./images/about-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+}
+header {
+  background-color: black;
+  color: white;
+  padding: 1em 2em; /* Adjust padding as needed */
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 2em;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:visited {
+  text-decoration: none;
+  color: white;
+}
+article {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8em;
+  padding: 3em;
+  max-width: 52em;
+  max-height: 90vh;
+  text-align: center;
+  margin-top: 1em;
+  overflow-y: auto;
+}
+
+/* Hide scrollbar */
+article::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar width */
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 1.5em;
+}
+
+h2 {
+  margin-bottom: 0.5em;
+}
+
+p {
+  color: #555;
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
