@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif);
+/*reset*/
 * {
   padding: 0;
   margin: 0;
@@ -10,6 +11,8 @@ body {
   overflow-x: hidden;
 }
 
+/*First Part*/
+/*header*/
 header {
   background-image: url(./images/banner.jpg);
   background-size: cover;
@@ -33,6 +36,7 @@ header {
   margin: 0 3em;
 }
 
+/*navigation in the header*/
 nav ul {
   color: white;
   display: flex;
@@ -55,6 +59,7 @@ nav ul li a:visited {
   color: white;
 }
 
+/*banner*/
 .banner-text {
   display: flex;
   flex-direction: column;
@@ -75,8 +80,7 @@ nav ul li a:visited {
   padding: 1.5em 0em;
 }
 
-/*Second*/
-
+/*Second Part*/
 .cards,
 .cards-two {
   display: flex;
@@ -166,6 +170,7 @@ footer {
   padding: 0.5em 0;
 }
 
+/*Responsive*/
 @media screen and (max-width: 1400px) {
   .title {
     padding: 0 1em;
@@ -184,7 +189,7 @@ footer {
 @media screen and (max-width: 880px) {
   .cards-two img {
     height: 20vh;
-    width: 30vw;
+    width: auto;
   }
 
   nav ul {
@@ -212,6 +217,25 @@ footer {
   }
 }
 @media screen and (max-width: 480px) {
-  header {
+  .social {
+    flex-direction: column;
+  }
+  .social i {
+    padding: 1em 0.5em;
+  }
+
+  .title {
+    font-size: 1.7em;
+  }
+  nav ul li {
+    padding: 1em;
+  }
+  .articles article {
+    padding: 2em;
+    flex-basis: 100%;
+  }
+  .social li {
+    font-size: 14px;
+    margin: 0;
   }
 }
