@@ -64,6 +64,7 @@ nav ul li a:visited {
 
 .title {
   font-size: 3em;
+  text-align: center;
   letter-spacing: 0.1em;
   font-weight: bolder;
 }
@@ -126,4 +127,78 @@ footer {
   bottom: 0;
   text-align: center;
   padding: 0.5em 0;
+}
+/*Responsive*/
+@media screen and (max-width: 1400px) {
+  .title {
+    padding: 0 1em;
+  }
+
+  .motivational-words {
+    text-align: center;
+    padding: 1.5em 0em;
+  }
+  .cards-two img {
+    height: 30vh;
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .cards-two img {
+    height: 20vh;
+    width: auto;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+
+  .banner-text {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  nav ul {
+    background-color: black;
+  }
+  .motivational-words {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .banner-text {
+    padding-top: 1em;
+    font-size: 0.8em;
+  }
+  .motivational-words {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .social {
+    flex-direction: column;
+  }
+  .social i {
+    padding: 1em 0.5em;
+  }
+
+  .title {
+    font-size: 1.7em;
+  }
+  nav ul li {
+    padding: 1em;
+  }
+
+  .articles article {
+    padding: 2em;
+    flex-basis: 100%;
+  }
+  .social li {
+    font-size: 14px;
+    margin: 0;
+  }
 }
