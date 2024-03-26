@@ -12,17 +12,14 @@ body {
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   min-height: 100vh;
 }
 header {
   background-color: black;
   color: white;
-  padding: 1em 2em; /* Adjust padding as needed */
-  position: fixed;
-  top: 0;
-  right: 0;
+  padding: 1em 2em;
+  position: center;
 }
 
 nav ul {
@@ -31,7 +28,7 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin-right: 2em;
+  padding: 0 1em;
 }
 nav ul li a {
   text-decoration: none;
@@ -45,16 +42,16 @@ article {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 8em;
   padding: 3em;
-  max-width: 52em;
-  max-height: 90vh;
-  text-align: center;
   margin-top: 1em;
+  max-width: 52em;
+  max-height: 85vh;
+  text-align: center;
   overflow-y: auto;
 }
 
 /* Hide scrollbar */
 article::-webkit-scrollbar {
-  width: 0; /* Remove scrollbar width */
+  width: 0;
 }
 
 h1 {
@@ -71,6 +68,7 @@ p {
   font-size: 1.2rem;
   margin-bottom: 1em;
 }
+
 footer {
   background-color: black;
   color: white;
@@ -78,4 +76,18 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+footer p {
+  margin-top: 0.3em;
+  color: white;
+}
+
+@media screen and (max-width: 913px) {
+  article {
+    margin-left: 1em;
+    margin-right: 1em;
+    max-width: 40em;
+    max-height: auto;
+  }
 }
